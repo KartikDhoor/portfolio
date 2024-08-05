@@ -1,5 +1,47 @@
-*{
-    background-color: #E4E6EB;
+
+.light-main-bg{
+  background-color: #E4E6EB;
+  color: black;
+}
+.dark-main-bg{
+  background-color: #25282A;
+  color: #e8e6e3;
+}
+.dark-nav-sty{
+  margin-left: 28px;
+  margin-top: 30px;
+  padding:  0px !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+  background-color: #25282A;
+  overflow: hidden;
+}
+.dark-nav-sty1{
+  margin-left: 28px;
+  margin-top: 30px;
+  padding:  0px !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+  background-color: #FFB400;
+  overflow: hidden;
+}
+.dark-nav-sty:hover{
+  margin-left: 28px;
+  margin-top: 30px;
+  padding:  0px !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+  background-color: #FFB400;
+  overflow: hidden;
+}
+.dark-text{
+  color: #e8e6e3 !important;
+}
+.dark-muted{
+  color: #e8e6e3 ;
 }
 .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -126,6 +168,16 @@
     margin-bottom: 15px;
     background-color: white;
 }
+.icon-dark-image{
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #181A1B;
+}
 .siz{
     display: flex;
 }
@@ -137,6 +189,12 @@
     background-color: white;
     border-radius: 5px;
     padding: 10px;
+}
+.dark-col{
+  margin-top: 20px;
+  background-color: #181A1B;
+  border-radius: 5px;
+  padding: 10px;
 }
 .slick-slide>div{
     margin: 0 10px;
@@ -164,13 +222,20 @@
 .text-col{
     background-color: white;
 }
+.text-col1{
+  background-color: #181A1B;
+}
 
 .edu{
     background-color: white;
     margin-left: 0px !important;
     margin-right: 0px !important;
 }
-
+.dark-edu{
+  background-color: #181A1B;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
 
 .portfolio{
     margin-top: 30px;
@@ -201,14 +266,28 @@
     width: auto;
 }
 .contact-inp{
-    border: none;
+    border: solid 2px black;
+    border-radius: 15px;
     height: 50px;
     width: 100%;
 }
 .contact-inp1{
-    border: none;
+  border-radius: 15px;
+    border: solid 2px black;
     height: 200px;
     width: 100%;
+}
+.contact-inp-dark{
+  border: solid 2px gray;
+  border-radius: 15px;
+  height: 50px;
+  width: 100%;
+}
+.contact-inp1-dark{
+border-radius: 15px;
+  border: solid 2px gray;
+  height: 200px;
+  width: 100%;
 }
 .message-btn{
     height: 50px;
@@ -254,6 +333,9 @@
     flex-direction: column;
     justify-content: center;
     position: fixed;
+    overflow-y: auto;
+  -ms-overflow-style: none;
+scrollbar-width: none;
 }
 .nav-sty{
     margin-left: 28px;
@@ -325,6 +407,14 @@
     background-color: white;
     overflow: hidden;
 }
+.hero1{
+  margin-top: 40px;
+  border: none;
+  width: 100%;
+  height: 80vh;
+  background-color: #181A1B !important;
+  overflow: hidden;
+}
 .home-text{
     display: block;
     padding-top: 110px;
@@ -358,7 +448,27 @@
   background-color: #FFB400;
   overflow: hidden;
 }
+.dark-sm-nav-icon{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding:  0px !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+  background-color: #272728;
+  overflow: hidden;
+}
+.dark-sm-sty:hover{
+  padding:  0px !important;
+  height: 50px;
+  width: 50px;
+  border-radius: 15px;
+  background-color: #FFB400;
+  overflow: hidden;
+}
 .img2{
+  margin-top: 5px;
+  margin-bottom: 5px;
   height: 50px;
   width: 50px;
   border-radius: 50px;
@@ -418,6 +528,12 @@
 }
 .zoom:hover{
   transform: scale(1.05);
+}
+.zoom-port{
+  transition: transform 0.3s ease-in-out;
+}
+.zoom-port:hover{
+  transform: scale(1.2);
 }
 @keyframes slideIn {
   0% {
@@ -487,7 +603,7 @@
 }
 }
 .sidebar1{
-  height: 100vh;
+  height: 100%;
   width: auto;
   position: fixed;
   top: 0;
@@ -514,4 +630,17 @@ transform: translateX(0);
     object-fit: cover;
     overflow: hidden;
   }
+}
+.nav-siz1 {
+  height: 100vh;
+  width: 25%;
+  top:0;
+  right:0;
+  z-index: 1030;
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+scrollbar-width: none;
+  position: fixed;
+  transition: transform 0.3s ease-in-out;
+transform: translateX(0);
 }
