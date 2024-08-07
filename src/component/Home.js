@@ -5,6 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
 	const homeScrollRef = useRef(null);
@@ -13,6 +16,7 @@ export default function Home() {
 	const workScrollRef = useRef(null);
 	const blogScrollRef = useRef(null);
 	const contactScrollRef = useRef(null);
+	const form=useRef();
 	const [sidebar, setSidebar] = useState(false);
 	const [navbar, setNavbar] = useState(false);
 
@@ -44,6 +48,23 @@ export default function Home() {
 		nextArrow: <div></div>,
 		preArrow: <div></div>,
 	};
+	const sendEmail = (e) => {
+		e.preventDefault();
+	
+		emailjs
+		  .sendForm('service_dybbjcc', 'template_n0rx9qz', form.current, {
+			publicKey: 'ZRN5tg85JMfOOFQ7q',
+		  })
+		  .then(
+			() => {
+			  toast.success("Message sent!");
+			},
+			(error) => {
+			  console.log('FAILED...', error.text);
+			  toast.error("Error");
+			},
+		  );
+	  };
 	return (
 		<>
 			<div className={Day?'container-fluid light-main-bg':'container-fluid dark-main-bg'}>
@@ -641,28 +662,28 @@ export default function Home() {
 									<div className='col-md-8 col-sm-12 col-12  mt-5' ref={contactScrollRef}>
 										<p className='h1 poppins-bold'>Leave us your info</p>
 										<div className={Day? 'container text-col mt-5':'container text-col1 mt-5'}>
-											<from className=''>
+											<form className='' ref={form} onSubmit={sendEmail}>
 												<div className={Day?'row text-col p-2':'row text-col1 p-2'}>
 													<div className={Day?'text-col':'text-col1'}>
 														<p className={Day?'h5 poppins-bold text-col mt-4 text-muted':'h5 poppins-bold text-col1 mt-4 dark-text'}>Your Full Name(required)*</p>
-														<input type='text' className={Day?'contact-inp':'contact-inp-dark'}></input>
+														<input type='text' name='user_name' className={Day?'contact-inp':'contact-inp-dark'}></input>
 													</div>
 													<div className={Day?'text-col':'text-col1'}>
 														<p className={Day?'h5 poppins-bold text-col mt-4 text-muted':'h5 poppins-bold text-col1 mt-4 dark-text'}>Your Email(required)*</p>
-														<input type='text' className={Day?'contact-inp':'contact-inp-dark'}></input>
+														<input type='text' name='user_email' className={Day?'contact-inp':'contact-inp-dark'}></input>
 													</div>
 													<div className={Day?'text-col':'text-col1'}>
 														<p className={Day?'h5 poppins-bold text-col mt-4 text-muted':'h5 poppins-bold text-col1 mt-4 dark-text'}>Subject</p>
-														<input type='text' className={Day?'contact-inp':'contact-inp-dark'}></input>
+														<input type='text' name='subject' className={Day?'contact-inp':'contact-inp-dark'}></input>
 													</div>
 													<div className={Day?'text-col':'text-col1'}>
 														<p className={Day?'h5 poppins-bold text-col mt-4 text-muted':'h5 poppins-bold text-col1 mt-4 dark-text'}>your message</p>
-														<textarea type='text' className={Day?'contact-inp1':'contact-inp1-dark'}></textarea>
+														<textarea type='text' name='message' className={Day?'contact-inp1':'contact-inp1-dark'}></textarea>
 													</div>
-													<button className='message-btn poppins-bold '>Send Message</button>
+													<button className='message-btn poppins-bold ' type='submit' value='send'>Send Message</button>
 												</div>
 
-											</from>
+											</form>
 
 										</div>
 									</div>
@@ -800,6 +821,7 @@ export default function Home() {
 						</div>
 					</div>
 				</div>
+				<ToastContainer />
 			</div>
 		</>
 	)
