@@ -373,7 +373,7 @@ export default function Home() {
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
 											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Management.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
-												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Website Management</p>
+												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Storage Management</p>
 												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>Node.js, S3 Bucket</p>
 											</div>
 										</div>
@@ -382,8 +382,8 @@ export default function Home() {
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
 											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Database.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
-												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Website Management</p>
-												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>node js,S3 Bucket</p>
+												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Database Management</p>
+												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>MongoDB,Mongoose</p>
 											</div>
 										</div>
 
@@ -392,8 +392,8 @@ export default function Home() {
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
 											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Online Support.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
-												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Website Management</p>
-												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>node js,S3 Bucket</p>
+												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Online Support</p>
+												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>email,call,24*7</p>
 											</div>
 										</div>
 									</div>
@@ -401,8 +401,8 @@ export default function Home() {
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
 											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Front end.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
-												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Website Management</p>
-												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>node js,S3 Bucket</p>
+												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Responsive Website</p>
+												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>Bootstrap,Tailwind</p>
 											</div>
 										</div>
 									</div>
@@ -520,23 +520,23 @@ export default function Home() {
 								</div>
 								<div className=''>
 									<div className='row'>
-										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
-											<img className='portfolio-img' src='./assets/images/pic1.jpg'></img>
+										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
+											<img className='portfolio-img' src='./assets/images/pic1.png'></img>
 										</div>
-										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
-											<img className='portfolio-img' src='./assets/images/pic2.jpg'></img>
+										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
+											<img className='portfolio-img' src='./assets/images/pic2.png'></img>
 										</div>
-										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
-											<img className='portfolio-img' src='./assets/images/pic3.jpg'></img>
+										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
+											<img className='portfolio-img' src='./assets/images/pic3.png'></img>
 										</div>
-										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
-											<img className='portfolio-img' src='./assets/images/pic4.jpg'></img>
+										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
+											<img className='portfolio-img' src='./assets/images/pic4.png'></img>
 										</div>
-										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
-											<img className='portfolio-img' src='./assets/images/pic5.jpg'></img>
+										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
+											<img className='portfolio-img' src='./assets/images/pic5.png'></img>
 										</div>
-										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
-											<img className='portfolio-img' src='./assets/images/pic6.jpg'></img>
+										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
+											<img className='portfolio-img' src='./assets/images/pic6.png'></img>
 										</div>
 									</div>
 								</div>
@@ -554,42 +554,42 @@ export default function Home() {
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 mt-2'>
 										<div className={Day? 'blog-siz text-col zoom':'blog-siz text-col1 zoom'}>
 											<div>
-												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./assets/images/pic1.jpg' />
+												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./assets/images/pic1.png' />
 											</div>
 											<div className={Day? 'text-col p-2 rounded-2':'text-col1 p-2 rounded-2'}>
-												<p className={Day?'h4 text-col':'h4 text-col1'}>How to Make Web templates</p>
-												<p className={Day?'text-col':'text-col1'}>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized of please...</p>
-												<p className={Day?'h5 text-col rounded-2':'h5 text-col1 rounded-2'}>Learn More</p>
+												<p className={Day?'h4 text-col':'h4 text-col1'}>Bookstore Website</p>
+												<p className={Day?'text-col':'text-col1'}>This template showcases a bookstore website built with Bootstrap. It features a user-friendly interface for browsing and purchasing books.</p>
+												<Link className='text-decoration-none' to='https://getbootstrap.com/docs/5.0/getting-started/introduction/'><p className={Day?'h5 text-col rounded-2 text-dark':'h5 text-col1 rounded-2'}>Learn More</p></Link>
 											</div>
 										</div>
 									</div>
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 mt-2'>
 									<div className={Day? 'blog-siz text-col zoom':'blog-siz text-col1 zoom'}>
 											<div>
-												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./assets/images/pic2.jpg' />
+												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./assets/images/pic2.png' />
 											</div>
 											<div className={Day? 'text-col p-2 rounded-2':'text-col1 p-2 rounded-2'}>
-												<p className={Day?'h4 text-col':'h4 text-col1'}>How to Make Web templates</p>
-												<p className={Day?'text-col':'text-col1'}>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized of please...</p>
-												<p className={Day?'h5 text-col rounded-2':'h5 text-col1 rounded-2'}>Learn More</p>
+												<p className={Day?'h4 text-col':'h4 text-col1'}>E-commerce Website</p>
+												<p className={Day?'text-col':'text-col1'}>An advanced e-commerce website template created using Tailwind CSS. It features a modern design and responsive layout.</p>
+												<Link className='text-decoration-none' to='https://getbootstrap.com/docs/5.0/getting-started/introduction/' ><p className={Day?'h5 text-col rounded-2 text-dark':'h5 text-col1 rounded-2'}>Learn More</p></Link>
 											</div>
 										</div>
 									</div>
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 mt-2 d-none d-md-block'>
 									<div className={Day? 'blog-siz text-col zoom':'blog-siz text-col1 zoom'}>
 											<div>
-												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./assets/images/pic3.jpg' />
+												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./assets/images/pic3.png' />
 											</div>
 											<div className={Day? 'text-col p-2 rounded-2':'text-col1 p-2 rounded-2'}>
-												<p className={Day?'h4 text-col':'h4 text-col1'}>How to Make Web templates</p>
-												<p className={Day?'text-col':'text-col1'}>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized of please...</p>
-												<p className={Day?'h5 text-col rounded-2':'h5 text-col1 rounded-2'}>Learn More</p>
+												<p className={Day?'h4 text-col':'h4 text-col1'}>Clothing Store</p>
+												<p className={Day?'text-col':'text-col1'}>This template is designed for a clothing store, also built with Bootstrap. It includes features for showcasing apparel and managing inventory.</p>
+												<Link className='text-decoration-none' to='https://tailwindcss.com/docs/installation'><p className={Day?'h5 text-col rounded-2 text-dark':'h5 text-col1 rounded-2'}>Learn More</p></Link>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div className='recomendation container'>
+							{/* <div className='recomendation container'>
 								<div className='row mt-5'>
 									<p className='h1 text-center poppins-bold'>Recommendation</p>
 								</div>
@@ -656,7 +656,7 @@ export default function Home() {
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> */}
 							<div className='container'>
 								<div className='row' ref={contactRef}>
 									<div className='col-md-8 col-sm-12 col-12  mt-5' ref={contactScrollRef}>
