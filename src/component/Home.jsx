@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Link } from 'react-router-dom';
 import { useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
@@ -39,15 +36,6 @@ export default function Home() {
 	const handleNavbar = () => {
 		setNavbar(!navbar);
 	}
-	var settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		nextArrow: <div></div>,
-		preArrow: <div></div>,
-	};
 	const sendEmail = (e) => {
 		e.preventDefault();
 	
@@ -73,7 +61,7 @@ export default function Home() {
 						<div className={Day?'container text-col sidebar':'container sidebar text-col1'}>
 
 							<div className={Day?'row text-col':'row text-col1'}>
-								<img className={Day?'img text-col':'img text-col1'} src='./assets/images/my1.png' alt='' />
+								<img className={Day?'img text-col':'img text-col1'} src='./src/assets/images/my1.png' alt='' />
 							</div>
 							<div>
 								<h5 className={Day?'text-center text-col poppins-regular':'text-center text-col1 poppins-regular'}>Kartik</h5>
@@ -82,11 +70,11 @@ export default function Home() {
 								<p className={Day?'text-muted text-center text-col sidebar-siz':'text-muted text-center dark-text text-col1 sidebar-siz'}>Full-Stack Developer</p>
 							</div>
 							<div className={Day?'side-panel text-col':'side-panel text-col1'}>
-								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} target='./' to='https://www.instagram.com/kartik_dhoor?igsh=azZ1bjc4ODR4c2o3'><img className={Day?'side-img text-col':'side-img text-col1'} src='./assets/images/instagram.png'></img></Link></div>
-								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} target='./'><img className={Day?'side-img text-col':'side-img text-col1'} src='./assets/images/facebook.png'></img></Link></div>
-								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} target='./' to="https://github.com/KartikDhoor"><img className={Day?'side-img text-col':'side-img text-col1'} src='./assets/images/github.png'></img></Link></div>
-								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} target='./' to='https://www.linkedin.com/in/kartik-dhoor-56970b247/'><img className={Day?'side-img text-col':'side-img text-col1'} src='./assets/images/linkedin.png'></img></Link></div>
-								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} to='/'><img className={Day?'side-img text-col':'side-img text-col1'} src='./assets/images/web.png'></img></Link></div>
+								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} target='./' to='https://www.instagram.com/kartik_dhoor?igsh=azZ1bjc4ODR4c2o3'><img className={Day?'side-img text-col':'side-img text-col1'} src='./src/assets/images/instagram.png'></img></Link></div>
+								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} target='./'><img className={Day?'side-img text-col':'side-img text-col1'} src='./src/assets/images/facebook.png'></img></Link></div>
+								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} target='./' to="https://github.com/KartikDhoor"><img className={Day?'side-img text-col':'side-img text-col1'} src='./src/assets/images/github.png'></img></Link></div>
+								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} target='./' to='https://www.linkedin.com/in/kartik-dhoor-56970b247/'><img className={Day?'side-img text-col':'side-img text-col1'} src='./src/assets/images/linkedin.png'></img></Link></div>
+								<div className={Day?'text-col':'text-col1'}><Link className={Day?'text-col':'text-col1'} to='/'><img className={Day?'side-img text-col':'side-img text-col1'} src='./src/assets/images/web.png'></img></Link></div>
 							</div>
 							<div className={Day ? "br mt-1 text-col" : "br mt-1 text-col1"}></div>
 							<div className={Day?'row text-col':'row text-col1'}>
@@ -143,12 +131,12 @@ export default function Home() {
 													<div className={Day?'row text-col mt-1':'row text-col1 mt-1'}>
 														<div className={Day?'sm-nav-icon text-col mx-auto':'dark-sm-nav-icon text-col1 mx-auto'}>
 															<img className={Day?'icon-img text-col':'icon-img text-col1'}
-																src='./assets/images/close.png'
+																src='./src/assets/images/close.png'
 																onClick={handleSidebar} />
 														</div>
 													</div>
 													<div className={Day?'row text-col' :'row text-col1'}>
-														<img className={Day?'img text-col' :'img text-col1'} src='./assets/images/my1.png' alt='' />
+														<img className={Day?'img text-col' :'img text-col1'} src='./src/assets/images/my1.png' alt='' />
 													</div>
 													<div>
 														<h5 className={Day? 'text-center text-col poppins-regular':'text-center text-col1 poppins-regular'}>Kartik</h5>
@@ -157,11 +145,11 @@ export default function Home() {
 														<p className={Day?'text-muted text-center text-col sidebar-siz' :'text-muted dark-text text-center text-col1 sidebar-siz'}>Full-Stack Developer</p>
 													</div>
 													<div className={Day?'side-panel text-col' :'side-panel text-col1'}>
-														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} target='./' to='https://www.instagram.com/kartik_dhoor?igsh=azZ1bjc4ODR4c2o3'><img className={Day? 'side-img text-col':'side-img text-col1'} src='./assets/images/instagram.png'></img></Link></div>
-														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} target='./'><img className={Day? 'side-img text-col':'side-img text-col1'} src='./assets/images/facebook.png'></img></Link></div>
-														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} target='./' to="https://github.com/KartikDhoor"><img className={Day? 'side-img text-col':'side-img text-col1'} src='./assets/images/github.png'></img></Link></div>
-														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} target='./' to='https://www.linkedin.com/in/kartik-dhoor-56970b247/'><img className={Day? 'side-img text-col':'side-img text-col1'} src='./assets/images/linkedin.png'></img></Link></div>
-														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} to='/'><img className={Day? 'side-img text-col':'side-img text-col1'} src='./assets/images/web.png'></img></Link></div>
+														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} target='./' to='https://www.instagram.com/kartik_dhoor?igsh=azZ1bjc4ODR4c2o3'><img className={Day? 'side-img text-col':'side-img text-col1'} src='./src/assets/images/instagram.png'></img></Link></div>
+														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} target='./'><img className={Day? 'side-img text-col':'side-img text-col1'} src='./src/assets/images/facebook.png'></img></Link></div>
+														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} target='./' to="https://github.com/KartikDhoor"><img className={Day? 'side-img text-col':'side-img text-col1'} src='./src/assets/images/github.png'></img></Link></div>
+														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} target='./' to='https://www.linkedin.com/in/kartik-dhoor-56970b247/'><img className={Day? 'side-img text-col':'side-img text-col1'} src='./src/assets/images/linkedin.png'></img></Link></div>
+														<div className={Day? 'text-col':'text-col1'}><Link className={Day? 'text-col':'text-col1'} to='/'><img className={Day? 'side-img text-col':'side-img text-col1'} src='./src/assets/images/web.png'></img></Link></div>
 													</div>
 													<div className={Day?'br mt-1 text-col':'br mt-1 text-col1'}></div>
 													<div className={Day? 'row text-col':'row text-col1'}>
@@ -220,7 +208,7 @@ export default function Home() {
 													<div className={Day?'nav-sty':'dark-nav-sty'}>
 														<img onClick={handleNavbar}
 															className='icon-img text-col on-click-col'
-															src='./assets/images/close.png'
+															src='./src/assets/images/close.png'
 															alt='home'
 														/>
 													</div>
@@ -229,7 +217,7 @@ export default function Home() {
 													<div className={Day? homeVisible ? "nav-sty1" : 'nav-sty text-col':homeVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 														<img onClick={() => scrollToSection(homeScrollRef)}
 															className='icon-img text-col on-click-col'
-															src='./assets/images/home-icon-silhouette.png'
+															src='./src/assets/images/home-icon-silhouette.png'
 															alt='home'
 														/>
 													</div>
@@ -238,7 +226,7 @@ export default function Home() {
 													<div id='services' className={Day? serviceVisible ? "nav-sty1" : 'nav-sty text-col':serviceVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 														<img onClick={() => scrollToSection(serviceScrollRef)}
 															className='icon-img text-col'
-															src='./assets/images/solution.png'
+															src='./src/assets/images/solution.png'
 															alt='Service'
 														/>
 													</div>
@@ -247,7 +235,7 @@ export default function Home() {
 													<div className={Day? educationVisible ? "nav-sty1" : 'nav-sty text-col':educationVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 														<img onClick={() => scrollToSection(educationScrollRef)}
 															className='icon-img text-col'
-															src='./assets/images/open-book.png'
+															src='./src/assets/images/open-book.png'
 															alt='Education'
 														/>
 													</div>
@@ -256,7 +244,7 @@ export default function Home() {
 													<div className={Day? workVisible ? "nav-sty1" : 'nav-sty text-col':workVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 														<img onClick={() => scrollToSection(workScrollRef)}
 															className='icon-img text-col'
-															src='./assets/images/suitcase.png'
+															src='./src/assets/images/suitcase.png'
 															alt='Experience'
 														/>
 													</div>
@@ -265,7 +253,7 @@ export default function Home() {
 													<div className={Day? blogVisible? "nav-sty1" : 'nav-sty text-col': blogVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 														<img onClick={() => scrollToSection(blogScrollRef)}
 															className='icon-img text-col'
-															src='./assets/images/edit-button.png'
+															src='./src/assets/images/edit-button.png'
 															alt='Blog'
 														/>
 													</div>
@@ -274,7 +262,7 @@ export default function Home() {
 													<div className={Day? contactVisible ? "nav-sty1" : 'nav-sty text-col':contactVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 														<img onClick={() => scrollToSection(contactScrollRef)}
 															className='icon-img text-col'
-															src='./assets/images/email.png'
+															src='./src/assets/images/email.png'
 															alt='Contact'
 														/>
 													</div>
@@ -286,7 +274,7 @@ export default function Home() {
 									<div className='small-nav d-block d-md-none'>
 										<div className={Day?'mt-3 rounded-4 row text-col':'mt-3 rounded-4 row text-col1'}>
 											<div className={Day?'col-sm-2 col-2 text-col rounded-4':'col-sm-2 col-2 text-col1 rounded-4'}>
-												<img className={Day?'img2  text-col':'img2  text-col1'} src='./assets/images/my1.png'
+												<img className={Day?'img2  text-col':'img2  text-col1'} src='./src/assets/images/my1.png'
 													onClick={handleSidebar}
 												/>
 											</div>
@@ -297,7 +285,7 @@ export default function Home() {
 														<img
 															className='icon-img'
 															onClick={() => setDay(false)}
-															src='./assets/images/sun (1).png'
+															src='./src/assets/images/sun (1).png'
 															alt='Day Icon'
 														/>
 													</div>
@@ -306,7 +294,7 @@ export default function Home() {
 														<img
 															className='icon-img'
 															onClick={() => setDay(true)}
-															src='./assets/images/moon.png'
+															src='./src/assets/images/moon.png'
 															alt='Night Icon'
 														/>
 													</div>
@@ -317,7 +305,7 @@ export default function Home() {
 													<img
 														className='icon-img'
 														onClick={handleNavbar}
-														src='./assets/images/menu.png'
+														src='./src/assets/images/menu.png'
 														alt='Night Icon'
 													/>
 												</div>
@@ -334,7 +322,7 @@ export default function Home() {
 											<button className='btn btn-warning mt-3'>HIRE ME&#10170;</button>
 										</div>
 										<div className= {Day?'col-md-5 col-lg-4 col-xl-4 col-sm-4 d-none d-sm-block text-col rounded-4':'col-md-5 col-lg-4 col-xl-4 col-sm-4 d-none d-sm-block text-col1 rounded-4'}>
-											<img className={Day? 'img-main text-col rounded-4':'img-main text-col1 rounded-4'} src='./assets/images/my1.png' />
+											<img className={Day? 'img-main text-col rounded-4':'img-main text-col1 rounded-4'} src='./src/assets/images/my1.png' />
 										</div>
 									</div>
 								</div>
@@ -353,7 +341,7 @@ export default function Home() {
 								<div className='row siz' >
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
-											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Front end.png'></img>
+											<img className={Day? 'icon-image':'icon-dark-image'} src='./src/assets/images/Front end.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
 												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Front End Developer</p>
 												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>ReactJS, HTML, CSS, Bootstrap</p>
@@ -362,7 +350,7 @@ export default function Home() {
 									</div>
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
-											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Back End.png'></img>
+											<img className={Day? 'icon-image':'icon-dark-image'} src='./src/assets/images/Back End.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
 												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Back End Developer</p>
 												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>Node.js, Express.js</p>
@@ -371,7 +359,7 @@ export default function Home() {
 									</div>
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
-											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Management.png'></img>
+											<img className={Day? 'icon-image':'icon-dark-image'} src='./src/assets/images/Management.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
 												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Storage Management</p>
 												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>Node.js, S3 Bucket</p>
@@ -380,7 +368,7 @@ export default function Home() {
 									</div>
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
-											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Database.png'></img>
+											<img className={Day? 'icon-image':'icon-dark-image'} src='./src/assets/images/Database.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
 												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Database Management</p>
 												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>MongoDB,Mongoose</p>
@@ -390,7 +378,7 @@ export default function Home() {
 									</div>
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
-											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Online Support.png'></img>
+											<img className={Day? 'icon-image':'icon-dark-image'} src='./src/assets/images/Online Support.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
 												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Online Support</p>
 												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>email,call,24*7</p>
@@ -399,7 +387,7 @@ export default function Home() {
 									</div>
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6'>
 										<div className={Day?'col zoom my-responsive-height':'dark-col zoom my-responsive-height'}>
-											<img className={Day? 'icon-image':'icon-dark-image'} src='./assets/images/Front end.png'></img>
+											<img className={Day? 'icon-image':'icon-dark-image'} src='./src/assets/images/Front end.png'></img>
 											<div className={Day?'text-col':'text-col1'}>
 												<p className={Day? 'h6 text-center  text-col poppins-semibold':'h6 text-center  text-col1 poppins-semibold'}>Responsive Website</p>
 												<p className={Day? 'text-muted text-center text-col poppins-regular':'text-muted dark-text text-center text-col1 poppins-regular'}>Bootstrap,Tailwind</p>
@@ -521,22 +509,22 @@ export default function Home() {
 								<div className=''>
 									<div className='row'>
 										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
-											<img className='portfolio-img' src='./assets/images/pic1.png'></img>
+											<img className='portfolio-img' src='./src/assets/images/pic1.png'></img>
 										</div>
 										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
-											<img className='portfolio-img' src='./assets/images/pic2.png'></img>
+											<img className='portfolio-img' src='./src/assets/images/pic2.png'></img>
 										</div>
 										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
-											<img className='portfolio-img' src='./assets/images/pic3.png'></img>
+											<img className='portfolio-img' src='./src/assets/images/pic3.png'></img>
 										</div>
 										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
-											<img className='portfolio-img' src='./assets/images/pic4.png'></img>
+											<img className='portfolio-img' src='./src/assets/images/pic4.png'></img>
 										</div>
 										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
-											<img className='portfolio-img' src='./assets/images/pic5.png'></img>
+											<img className='portfolio-img' src='./src/assets/images/pic5.png'></img>
 										</div>
 										<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 zoom'>
-											<img className='portfolio-img' src='./assets/images/pic6.png'></img>
+											<img className='portfolio-img' src='./src/assets/images/pic6.png'></img>
 										</div>
 									</div>
 								</div>
@@ -554,7 +542,7 @@ export default function Home() {
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 mt-2'>
 										<div className={Day? 'blog-siz text-col zoom':'blog-siz text-col1 zoom'}>
 											<div>
-												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./assets/images/pic1.png' />
+												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./src/assets/images/pic1.png' />
 											</div>
 											<div className={Day? 'text-col p-2 rounded-2':'text-col1 p-2 rounded-2'}>
 												<p className={Day?'h4 text-col':'h4 text-col1'}>Bookstore Website</p>
@@ -566,7 +554,7 @@ export default function Home() {
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 mt-2'>
 									<div className={Day? 'blog-siz text-col zoom':'blog-siz text-col1 zoom'}>
 											<div>
-												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./assets/images/pic2.png' />
+												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./src/assets/images/pic2.png' />
 											</div>
 											<div className={Day? 'text-col p-2 rounded-2':'text-col1 p-2 rounded-2'}>
 												<p className={Day?'h4 text-col':'h4 text-col1'}>E-commerce Website</p>
@@ -578,7 +566,7 @@ export default function Home() {
 									<div className='col-md-4 col-lg-4 col-xl-4 col-sm-6 col-6 mt-2 d-none d-md-block'>
 									<div className={Day? 'blog-siz text-col zoom':'blog-siz text-col1 zoom'}>
 											<div>
-												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./assets/images/pic3.png' />
+												<img className={Day? 'blog-img text-col':'blog-img text-col1'} src='./src/assets/images/pic3.png' />
 											</div>
 											<div className={Day? 'text-col p-2 rounded-2':'text-col1 p-2 rounded-2'}>
 												<p className={Day?'h4 text-col':'h4 text-col1'}>Clothing Store</p>
@@ -611,7 +599,7 @@ export default function Home() {
 											</div>
 											<p className={Day?'text-col poppins-regular':'text-col1 poppins-regular'}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
 											<div className={Day?'row mb-3 text-col m-0':'row mb-3 text-col1 m-0'}>
-												<div className={Day? 'col-md-5  text-col':'col-md-5  text-col1'}><img className={Day? 'review-image text-col':'review-image text-col1'} src='./assets/images/temp.jpg' /></div>
+												<div className={Day? 'col-md-5  text-col':'col-md-5  text-col1'}><img className={Day? 'review-image text-col':'review-image text-col1'} src='./src/assets/images/temp.jpg' /></div>
 												<div className={Day?'col-md-7  text-col':'col-md-7  text-col1'}>
 													<p className={Day?'h4  text-col':'h4  text-col1'}>James Gouse</p>
 													<p className={Day?'text-col text-muted':'text-col1 dark-text text-muted'}>Graphic Designer</p>
@@ -629,7 +617,7 @@ export default function Home() {
 											</div>
 											<p className={Day?'text-col poppins-regular':'text-col1 poppins-regular'}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
 											<div className={Day?'row mb-3 text-col m-0':'row mb-3 text-col1 m-0'}>
-												<div className={Day? 'col-md-5  text-col':'col-md-5  text-col1'}><img className={Day? 'review-image text-col':'review-image text-col1'} src='./assets/images/temp.jpg' /></div>
+												<div className={Day? 'col-md-5  text-col':'col-md-5  text-col1'}><img className={Day? 'review-image text-col':'review-image text-col1'} src='./src/assets/images/temp.jpg' /></div>
 												<div className={Day?'col-md-7  text-col':'col-md-7  text-col1'}>
 													<p className={Day?'h4  text-col':'h4  text-col1'}>James Gouse</p>
 													<p className={Day?'text-col text-muted':'text-col1 dark-text text-muted'}>Graphic Designer</p>
@@ -647,7 +635,7 @@ export default function Home() {
 											</div>
 											<p className={Day?'text-col poppins-regular':'text-col1 poppins-regular'}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
 											<div className={Day?'row mb-3 text-col m-0':'row mb-3 text-col1 m-0'}>
-												<div className={Day? 'col-md-5  text-col':'col-md-5  text-col1'}><img className={Day? 'review-image text-col':'review-image text-col1'} src='./assets/images/temp.jpg' /></div>
+												<div className={Day? 'col-md-5  text-col':'col-md-5  text-col1'}><img className={Day? 'review-image text-col':'review-image text-col1'} src='./src/assets/images/temp.jpg' /></div>
 												<div className={Day?'col-md-7  text-col':'col-md-7  text-col1'}>
 													<p className={Day?'h4  text-col':'h4  text-col1'}>James Gouse</p>
 													<p className={Day?'text-col text-muted':'text-col1 dark-text text-muted'}>Graphic Designer</p>
@@ -690,7 +678,7 @@ export default function Home() {
 									<div className='col-md-4 col-sm-12 col-12 mt-5'>
 										<p className='h1 poppins-bold'>Contact Info</p>
 										<div className={Day? 'row text-col mt-5':'row text-col1 mt-5'}>
-											<div className={Day?'contact-cen contact-siz text-col':'contact-cen contact-siz text-col1'}><img className='contact-img' src='./assets/images/map.png' /></div>
+											<div className={Day?'contact-cen contact-siz text-col':'contact-cen contact-siz text-col1'}><img className='contact-img' src='./src/assets/images/map.png' /></div>
 											<div className={Day?'row m-0 text-col':'row m-0 text-col1'}>
 												<div className={Day?'col-md-6 col-sm-6 col-6 text-col':'col-md-6 col-sm-6 col-6 text-col1'}>
 													<p className={Day? 'h6 text-col':'h6 text-col1'}>Country:-</p>
@@ -705,7 +693,7 @@ export default function Home() {
 											</div>
 										</div>
 										<div className={Day? 'row text-col mt-5':'row text-col1 mt-5'}>
-											<div className={Day?'contact-cen contact-siz text-col':'contact-cen contact-siz text-col1'}><img className='contact-img' src='./assets/images/link.png' /></div>
+											<div className={Day?'contact-cen contact-siz text-col':'contact-cen contact-siz text-col1'}><img className='contact-img' src='./src/assets/images/link.png' /></div>
 											<div className={Day?'row m-0 text-col':'row m-0 text-col1'}>
 												<div className={Day?'col-md-5 col-sm-6 col-5 text-col':'col-md-5 col-sm-6 col-5 text-col1'}>
 													<p className={Day? 'h6 text-col':'h6 text-col1'}>Email:-</p>
@@ -720,7 +708,7 @@ export default function Home() {
 											</div>
 										</div>
 										<div className={Day? 'row text-col mt-5':'row text-col1 mt-5'}>
-											<div className={Day?'contact-cen contact-siz text-col':'contact-cen contact-siz text-col1'}><img className='contact-img' src='./assets/images/phone-call.png' /></div>
+											<div className={Day?'contact-cen contact-siz text-col':'contact-cen contact-siz text-col1'}><img className='contact-img' src='./src/assets/images/phone-call.png' /></div>
 											<div className={Day?'row m-0 text-col':'row m-0 text-col1'}>
 												<div className={Day?'col-md-6 col-sm-6 col-6 text-col':'col-md-6 col-sm-6 col-6 text-col1'}>
 													<p className={Day?'h6 text-col':'h6 text-col1'}>Phone no:-</p>
@@ -749,7 +737,7 @@ export default function Home() {
 										<img
 											className='icon-img'
 											onClick={() => setDay(false)}
-											src='./assets/images/sun (1).png'
+											src='./src/assets/images/sun (1).png'
 											alt='Day Icon'
 										/>
 									</div>
@@ -758,7 +746,7 @@ export default function Home() {
 										<img
 											className='icon-img'
 											onClick={() => setDay(true)}
-											src='./assets/images/moon.png'
+											src='./src/assets/images/moon.png'
 											alt='Night Icon'
 										/>
 									</div>
@@ -768,7 +756,7 @@ export default function Home() {
 								<div className={Day? homeVisible ? "nav-sty1" : 'nav-sty text-col':homeVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 									<img onClick={() => scrollToSection(homeScrollRef)}
 										className='icon-img text-col on-click-col'
-										src='./assets/images/home-icon-silhouette.png'
+										src='./src/assets/images/home-icon-silhouette.png'
 										alt='home'
 									/>
 								</div>
@@ -777,7 +765,7 @@ export default function Home() {
 								<div id='services' className={Day?serviceVisible ? "nav-sty1" : 'nav-sty text-col':serviceVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 									<img onClick={() => scrollToSection(serviceScrollRef)}
 										className='icon-img text-col'
-										src='./assets/images/solution.png'
+										src='./src/assets/images/solution.png'
 										alt='Service'
 									/>
 								</div>
@@ -786,7 +774,7 @@ export default function Home() {
 								<div className={Day?educationVisible ? "nav-sty1" : 'nav-sty text-col':educationVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 									<img onClick={() => scrollToSection(educationScrollRef)}
 										className='icon-img text-col'
-										src='./assets/images/open-book.png'
+										src='./src/assets/images/open-book.png'
 										alt='Education'
 									/>
 								</div>
@@ -795,7 +783,7 @@ export default function Home() {
 								<div className={Day?workVisible ? "nav-sty1" : 'nav-sty text-col':workVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 									<img onClick={() => scrollToSection(workScrollRef)}
 										className='icon-img text-col'
-										src='./assets/images/suitcase.png'
+										src='./src/assets/images/suitcase.png'
 										alt='Experience'
 									/>
 								</div>
@@ -804,7 +792,7 @@ export default function Home() {
 								<div className={Day?blogVisible ? "nav-sty1" : 'nav-sty text-col':blogVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 									<img onClick={() => scrollToSection(blogScrollRef)}
 										className='icon-img text-col'
-										src='./assets/images/edit-button.png'
+										src='./src/assets/images/edit-button.png'
 										alt='Blog'
 									/>
 								</div>
@@ -813,7 +801,7 @@ export default function Home() {
 								<div className={Day?contactVisible ? "nav-sty1" : 'nav-sty text-col':contactVisible? "dark-nav-sty1" : 'dark-nav-sty'}>
 									<img onClick={() => scrollToSection(contactScrollRef)}
 										className='icon-img text-col'
-										src='./assets/images/email.png'
+										src='./src/assets/images/email.png'
 										alt='Contact'
 									/>
 								</div>
