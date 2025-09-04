@@ -113,7 +113,7 @@ export default function Home() {
 							</div>
 							<div className={Day?'br mt-1 text-col':'br mt-1 text-col1'}></div>
 							<div className={Day?'cvbtn text-col my-3' :'cvbtn text-col1 my-3'}>
-								<Link to='https://drive.google.com/file/d/110DNA4v9y40AP5fVZrDeNoocE5s_vyc0/view' target='./'>
+								<Link to='https://drive.google.com/file/d/1FivbdYQlH_VK_PfNm9aVfbLkdUxaLOhA/view?usp=sharing' target='./'>
 									<button className='py-2 px-3 border-0' >
 										Download CV
 									</button></Link>
